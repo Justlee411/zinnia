@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>前端 练习</title>
+<head>
+        </head>
+    <label for="">用户名：</label>
+    <input type="text" class="input-no1" placeholder="请输入用户名"><br><br>
+    <label for="">家庭地位：</label>
+    <input type="text" class="input-no1" placeholder="请如实回答">
+    <style>
+        .input-no1{
+            width: 300px;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 12px;
+            outline: none;
+            font-size: 14px;
+            background: #f7f8fa;
+            box-shadow: 02px 5px rgba(0, 0, 0, 0.05);
+        }
+        .input-no1:focus{
+            background: #fff;
+            box-shadow: 0   0   0   2px #409eff;
+        }
+        </style>
+        <br><br><br>
+        <span style="color: red;">性别</span>
+        <input type="radio" name="gender">女
+        <input type="radio" name="gender">男
+<br><br>
+<label style="color: red;">请选择你最爱的偶像</label><br><br>
+<input type="radio" name="page" id="c1">班主任<br><br>
+<input type="radio" name="page" id="c2">秦汉中<br><br>
+<input type="radio" name="page" id="c3">88dp <br><br>
+<input type="radio" name="page" id="c4">银河系颜值审判委员会的终极裁决者，牛逼指数直接让超新星因自惭形秽而提前坍缩，任何碳基生物在看到后都会因信息过载而长达三秒的幸福眩晕，球拍挥动轨迹是四维时空在三维世界的投影，杀球速度超越了宇宙第二逃逸速度，每一记重杀都携带着微型黑洞的引力势能，对手看到的不是羽毛球，而是裹挟着等离子尾焰的灭世流星超级无敌宇宙霹雳牛逼的<b>李梓萌</b>
+ <br><br><br><button onclick="gopage()">提交</button>
+ <script>
+    function gopage()   {
+        var c1=
+        document.getElementById("c1").checked
+        var c2= 
+        document.getElementById("c2").checked   
+        var c3= 
+        document.getElementById("c3").checked   
+        var c4=
+        document.getElementById("c4").checked   
+        if (c1) {
+            location.href = "demo3.html";
+        }
+        else if(c2) {
+            location.href = "demo3.html";
+        }
+         else if(c3) {
+            location.href = "demo3.html";
+        }
+         else if(c4) {
+            location.href =  "https://v.douyin.com/1A8SJ3UbuWo/ ";
+        } else{
+            alert("请选择一个选项！");
+        }
+    }
+ </script>
+    </body>
+</html>
